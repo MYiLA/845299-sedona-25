@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Дюбанова](https://up.htmlacademy.ru/htmlcss/25/user/845299).
-* Наставник: `Илья Туров`.
+* Наставник: [Илья Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
