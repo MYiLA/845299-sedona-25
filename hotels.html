@@ -9,21 +9,92 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li class="site-navigation-left"> <a href="#">ИНФОРМАЦИЯ</a> </li>
-          <li class="site-navigation-left"> <a href="#">ФОТО И ВИДЕО</a> </li>
-          <li><a class="main-header-logo">
-              <img src="img/index-logo.svg" alt="Логотип «CITY OF SEDONA»"> </a> </li>
-          <li class="site-navigation-right"> <a href="#">КАРТА ШТАТА</a> </li>
-          <li class="site-navigation-right"> <a href="#">ГОСТИНИЦЫ</a> </li>
+          <li class="site-navigation-left"> 
+            <a href="#">ИНФОРМАЦИЯ</a> 
+          </li>
+          <li class="site-navigation-left">
+            <a href="#">ФОТО И ВИДЕО</a> 
+          </li>
+          <li>
+            <a class="main-header-logo" href="index.html">
+              <img src="img/index-logo.svg" alt="Логотип «CITY OF SEDONA»"> 
+            </a> 
+          </li>
+          <li class="site-navigation-right"> 
+            <a href="#">КАРТА ШТАТА</a> 
+          </li>
+          <li class="site-navigation-right"> 
+            <a href="#">ГОСТИНИЦЫ</a> 
+          </li>
         </ul>
       </nav>
     </header>
     
-    <main>
-
+    <main class="container">
+      <h1 hidden>Поиск отелей</h1>
+      <section class="search-form">
+        <h2 hidden>Фильтр отелей</h2>
+        <!-- Сдесь будет форма -->
+      </section>
+      <section class="search-sort">
+       <strong>Найдено</strong>
+       <span>Сортировка:</span>
+       <ul>
+         <li>По цене</li>
+         <li>По типу</li>
+         <li>По рейтингу</li>
+       </ul>
+       <button class="search-control-top">вверх</button>
+       <button class="search-control-bottom">вниз</button>
+      </section>
+      <section class="search-result">
+       <div class="hotel">
+          <a href="img/amara-resort-spa.jpg">
+            <img src="img/amara-resort-spa-smile.jpg" alt="Фото отеля"> 
+          </a>
+          <a href="#">
+            <h3>Amara Resort & Spa</h3>
+          </a>
+          <span>Гостиница</span>
+          <span>От 4000 Р.</span>
+          <a href="#">подробнее</a>
+          <a href="#">забронировать</a>
+          <div class="stars-4">4 звезды</div>
+          <div class="rating">Рейтинг:8,5</div>
+       </div>
+       <div class="hotel">
+          <a href="img/Desert-Quail-Inn.jpg">
+            <img src="img/Desert-Quail-Inn-smile.jpg" alt="Фото отеля"> 
+          </a>
+          <a href="#">
+            <h3>Desert Quail Inn</h3>
+          </a>
+          <span>Мотель</span>
+          <span>От 3000 Р.</span>
+          <a href="#">подробнее</a>
+          <a href="#">забронировать</a>
+          <div class="stars-3">3 звезды</div>
+          <div class="rating">Рейтинг:8,9</div>
+       </div>
+       <div class="hotel">
+          <a href="img/Poco-Diablo.jpg">
+            <img src="img/Poco-Diablo-smile.jpg" alt="Фото отеля"> 
+          </a>
+          <a href="#">
+            <h3>Villas at Poco Diablo</h3>
+          </a> 
+          <span>Апартаменты</span>
+          <span>От 2000 Р.</span>
+          <a href="#">подробнее</a>
+          <a href="#">забронировать</a>
+          <div class="stars-2">2 звезды</div>
+          <div class="rating">Рейтинг:9,2</div>
+       </div>
+      </section>
+      
     </main>
-    
-    <footer class="main-footer">
+
+    <footer class="footer">
       <p class="footer-contacts">#VISITSEDONA</p>
       <div class="footer-social">
         <ul>
