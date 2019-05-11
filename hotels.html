@@ -7,107 +7,133 @@
   </head>
   <body>
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-left"> 
-            <a href="#">ИНФОРМАЦИЯ</a> 
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"> 
+            <a class="nav-link" href="#">ИНФОРМАЦИЯ</a> 
           </li>
-          <li class="site-navigation-left">
-            <a href="#">ФОТО И ВИДЕО</a> 
+          <li class="nav-item">
+            <a class="nav-link" href="#">ФОТО И ВИДЕО</a> 
           </li>
-          <li class="site-navigation-right"> 
-            <a href="#">КАРТА ШТАТА</a> 
+          <li class="nav-item"> 
+            <a class="nav-link" href="#">КАРТА ШТАТА</a> 
           </li>
-          <li class="site-navigation-right"> 
-            <a href="#">ГОСТИНИЦЫ</a> 
+          <li class="nav-item"> 
+            <a class="nav-link" href="#">ГОСТИНИЦЫ</a> 
           </li>
         </ul>
-        <a class="main-header-logo" href="index.html">
+        <a class="header-logo" href="index.html">
           <img src="img/index-logo.svg" alt="Логотип «CITY OF SEDONA»">
+        </a>
       </nav>
     </header>
     
-    <main class="container">
+    <main class="main">
       <h1 hidden>Поиск отелей</h1>
       <section class="search-form">
         <h2 hidden>Фильтр отелей</h2>
         <!-- Сдесь будет форма -->
       </section>
-      <section class="search-sort">
-       <strong>Найдено</strong>
+
+      <div class="search-sort">
+       <strong>Найдено: <output name="search-sort-result">3</output></strong>
        <span>Сортировка:</span>
-       <ul>
-         <li>По цене</li>
-         <li>По типу</li>
-         <li>По рейтингу</li>
+       <ul class="search-sort-list">
+         <li class= "search-sort-item"> <a href="#">По цене</a> </li>
+         <li class= "search-sort-item"> <a href="#">По типу</a> </li>
+         <li class= "search-sort-item"> <a href="#">По рейтингу</a> </li>
        </ul>
-       <button class="search-control-top">вверх</button>
-       <button class="search-control-bottom">вниз</button>
-      </section>
-      <section class="search-result">
-       <div class="hotel">
-          <a href="img/amara-resort-spa.jpg">
-            <img src="img/amara-resort-spa-smile.jpg" alt="Фото отеля"> 
-          </a>
-          <a href="#">
-            <h3>Amara Resort & Spa</h3>
-          </a>
-          <span>Гостиница</span>
-          <span>От 4000 Р.</span>
-          <a href="#">подробнее</a>
-          <a href="#">забронировать</a>
-          <div class="stars-4">4 звезды</div>
-          <div class="rating">Рейтинг:8,5</div>
-       </div>
-       <div class="hotel">
-          <a href="img/Desert-Quail-Inn.jpg">
-            <img src="img/Desert-Quail-Inn-smile.jpg" alt="Фото отеля"> 
-          </a>
-          <a href="#">
-            <h3>Desert Quail Inn</h3>
-          </a>
-          <span>Мотель</span>
-          <span>От 3000 Р.</span>
-          <a href="#">подробнее</a>
-          <a href="#">забронировать</a>
-          <div class="stars-3">3 звезды</div>
-          <div class="rating">Рейтинг:8,9</div>
-       </div>
-       <div class="hotel">
-          <a href="img/Poco-Diablo.jpg">
-            <img src="img/Poco-Diablo-smile.jpg" alt="Фото отеля"> 
-          </a>
-          <a href="#">
-            <h3>Villas at Poco Diablo</h3>
-          </a> 
-          <span>Апартаменты</span>
-          <span>От 2000 Р.</span>
-          <a href="#">подробнее</a>
-          <a href="#">забронировать</a>
-          <div class="stars-2">2 звезды</div>
-          <div class="rating">Рейтинг:9,2</div>
-       </div>
-      </section>
+       <a class="search-control-top">вверх</a>
+       <a class="search-control-down">вниз</a>
+      </div>
       
+      <ul class="hotels-list">
+       <li class="hotels-item">
+         <figure class="hotel">
+            <img src="img/amara-resort-spa.jpg" alt="Фото отеля">
+            <figcaption class="hotel-desc">
+              <div>
+                <a class="hotel-desc-link" href="#">
+                  <h3 class="hotel-desc-title">Amara Resort & Spa</h3>
+                </a>
+                <span class="hotel-desc-type">Гостиница</span>
+                <span class="hotel-desc-prise">От 4000 Р.</span>
+                <a class="hotel-btn-info" href="#">подробнее</a>
+                <a class="hotel-btn-reservation" href="#">забронировать</a>
+              </div>
+              <div>
+                <output name="hotel-stars">4 звезды</output>
+                <span class="hotel-rating">Рейтинг:<output name="hotel-rating">8,5</output></span>
+              </div>
+            </figcaption>
+         </figure>
+       </li>
+
+       <li class="hotels-item">
+          <figure class="hotel">
+              <img src="img/desert-quail-inn.jpg" alt="Фото отеля">
+              <figcaption class="hotel-desc">
+                <div>
+                  <a class="hotel-desc-link" href="#">
+                    <h3 class="hotel-desc-title">Desert Quail Inn</h3>
+                  </a>
+                  <span class="hotel-desc-type">Мотель</span>
+                  <span class="hotel-desc-prise">От 3000 Р.</span>
+                  <a class="hotel-btn-info" href="#">подробнее</a>
+                  <a class="hotel-btn-reservation" href="#">забронировать</a>
+                </div>
+                <div>
+                  <output name="hotel-stars">3 звезды</output>
+                  <span class="hotel-rating">Рейтинг:<output name="hotel-rating">8,9</output></span>
+                </div>
+              </figcaption>
+           </figure>
+       </li>
+
+       <li class="hotels-item">
+          <figure class="hotel">
+            <img src="img/poco-diablo.jpg" alt="Фото отеля">
+            <figcaption class="hotel-desc">
+              <div>
+                <a class="hotel-desc-link" href="#">
+                  <h3 class="hotel-desc-title">Villas at Poco Diablo</h3>
+                </a>
+                <span class="hotel-desc-type">Апартаменты</span>
+                <span class="hotel-desc-prise">От 2000 Р.</span>
+                <a class="hotel-btn-info" href="#">подробнее</a>
+                <a class="hotel-btn-reservation" href="#">забронировать</a>
+              </div>
+              <div>
+                <output name="hotel-stars">2 звезды</output>
+                <span class="hotel-rating">Рейтинг:<output name="hotel-rating">9,2</output></span>
+              </div>
+            </figcaption>
+          </figure>
+       </li>
+      </ul>
     </main>
 
     <footer class="footer">
-      <p class="footer-contacts">#VISITSEDONA</p>
-      <div class="footer-social">
-        <ul>
-          <li> <a class="social-button" href="#">Твиттер</a> </li>
-          <li> <a class="social-button" href="#">Фейсбук</a> </li>
-          <li> <a class="social-button" href="#">Ютуб</a> </li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        <b>Website by</b>
+      <a class="footer-hashtag" href="#">#VISITSEDONA</a>
+      <ul class="social-list">
+        <li class="social-item"> 
+          <a class="social-button" href="#">Твиттер</a> 
+        </li>
+        <li class="social-item"> 
+          <a class="social-button" href="#">Фейсбук</a> 
+        </li>
+        <li class="social-item"> 
+          <a class="social-button" href="#">Ютуб</a> 
+        </li>
+      </ul>
+      <div class="footer-copyright">
+        <span>Website by</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/Html-Akademy.jpg" alt="HTML Academy">
         </a> 
-      </p>
-     </footer>
-     <script src="js/script.js"></script>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
