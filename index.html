@@ -108,13 +108,41 @@
      </section>
 
       <section class="booking">
-       <h6 class="booking-title">Заинтересовались?</h6>
+       <h2 class="visually-hidden">Бронирование гостиницы</h2>
+       <b class="booking-title">Заинтересовались?</b>
        <p class="booking-desk">
          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-        </p>
-       <button class="booking-btn" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-       <form class="booking-form" action="POST"></form>
-       <img src="img/map.png" alt="Карта Седоны" width="1200px" height="593px">
+       </p>
+       <form class="booking-form" action="post">
+         <fieldset class="booking-fieldset">
+           <legend class="booking-title"> <button class="booking-btn-title" type="button">Поиск гостиницы в седоне</button> </legend> 
+           <p class="booking-data-arrive">
+             <label>
+              Дата заезда:<input type="text" value="24 апреля 2017">
+             </label>
+             <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
+           </p>
+           <p class="booking-data-departure">
+             <label>
+                Дата выезда: <input type="text" value="4 июля 2017">
+             </label>
+             <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
+           </p>
+           <p class="booking-number-adult">
+             <label>
+               Взрослые:<input type="number" min="1" max="30" step="1" placeholder="2">
+             </label>
+           </p>
+           <p class="booking-number-children">
+              <label>
+               Дети:<input type="number" min="0" max="30" step="1" placeholder="0">
+              </label>
+           </p>
+           <p class="booking-btn-search"><button type="button">Найти</button></p>
+        </fieldset>
+       </form>
+       
+       <img src="img/map.png" alt="Карта с отелями Седоны" width="1200px" height="593px">
       </section>
     </main>
 
@@ -122,13 +150,13 @@
      <a class="footer-hashtag" href="#">#VISITSEDONA</a>
      <ul class="social-list">
         <li class="social-item"> 
-          <a class="social-button" href="#">Твиттер</a> 
+          <a class="social-button" href="#" aria-label="Седона в Твиттере"><img src="img/icon-tw.svg" alt="Твиттер" width="17px" height="15px" style="background-color:bisque"></a> 
         </li>
         <li class="social-item"> 
-          <a class="social-button" href="#">Фейсбук</a> 
+          <a class="social-button" href="#" aria-label="Седона в Фейсбуке"><img src="img/icon-fb.svg" alt="Фейсбук" width="12px" height="22px" style="background-color:bisque"></a> 
         </li>
         <li class="social-item"> 
-          <a class="social-button" href="#">Ютуб</a> 
+          <a class="social-button" href="#" aria-label="Седона на Ютубе"><img src="img/icon-youtube.svg" alt="Ютуб" width="20px" height="16px" style="background-color:bisque"></a> 
         </li>
      </ul>
      

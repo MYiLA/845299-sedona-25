@@ -30,10 +30,58 @@
     </header>
     
     <main class="main">
-      <h1 hidden>Поиск отелей</h1>
-      <section class="search-form">
-        <h2 hidden>Фильтр отелей</h2>
+      <h1 class="visually-hidden">Поиск отелей</h1>
+      <section class="search-hotel">
+        <h2 class="visually-hidden">Фильтр отелей</h2>
+        
+        <form class="search-form" action="get" oninput="prise-range-out" value="search-prise-range">
+            <fieldset class="search-service">
+              <legend class="search-service-title">Инфраструктура</legend> 
+              <p class="search-service-item">
+                <label>
+                 <input type="checkbox" checked>Бассейн
+                </label>
+              </p>
+              <p class="search-service-item">
+                <label>
+                 <input type="checkbox">Парковка
+                </label>
+              </p>
+              <p class="search-service-item">
+                <label>
+                  <input type="checkbox">Wi-Fi
+                </label>
+              </p>
+            </fieldset>
+            <fieldset class="search-type">
+                <legend class="search-type-title">Тип жилья</legend> 
+                <p class="search-type-item">
+                  <label>
+                   <input type="checkbox" checked>Гостиница
+                  </label>
+                </p>
+                <p class="search-type-item">
+                  <label>
+                   <input type="checkbox" checked>Мотель
+                  </label>
+                </p>
+                <p class="search-type-item">
+                  <label>
+                    <input type="checkbox" checked>Апартаменты
+                  </label>
+                </p>
+
+            </fieldset>
+            <div class="search-price">
+              <label for="search-prise-range">Стоимость в сутки(р):</label>
+              <output name="prise-range-out"></output>
+              <input type="range" id="search-prise-range" name="search-prise-range" min="0" max="3000" step="100">
+
+            </div>
+            <p class="search-form-submit"><input type="submit" action="https://echo.htmlacademy.ru" value="показать"></input></p>
+        </form>
         <!-- Сдесь будет форма -->
+
       </section>
 
       <div class="search-sort">
@@ -117,16 +165,16 @@
     <footer class="footer">
       <a class="footer-hashtag" href="#">#VISITSEDONA</a>
       <ul class="social-list">
-        <li class="social-item"> 
-          <a class="social-button" href="#">Твиттер</a> 
-        </li>
-        <li class="social-item"> 
-          <a class="social-button" href="#">Фейсбук</a> 
-        </li>
-        <li class="social-item"> 
-          <a class="social-button" href="#">Ютуб</a> 
-        </li>
-      </ul>
+          <li class="social-item"> 
+            <a class="social-button" href="#" aria-label="Седона в Твиттере"><img src="img/icon-tw.svg" alt="Твиттер" width="17px" height="15px" style="background-color:bisque"></a> 
+          </li>
+          <li class="social-item"> 
+            <a class="social-button" href="#" aria-label="Седона в Фейсбуке"><img src="img/icon-fb.svg" alt="Фейсбук" width="12px" height="22px" style="background-color:bisque"></a> 
+          </li>
+          <li class="social-item"> 
+            <a class="social-button" href="#" aria-label="Седона на Ютубе"><img src="img/icon-youtube.svg" alt="Ютуб" width="20px" height="16px" style="background-color:bisque"></a> 
+          </li>
+       </ul>
       <div class="footer-copyright">
         <span>Website by</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
