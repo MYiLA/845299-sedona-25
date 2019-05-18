@@ -34,31 +34,31 @@
       <section class="search-hotel">
         <h2 class="visually-hidden">Фильтр отелей</h2>
         
-        <form class="search-form" method="post" action="https:https://echo.htmlacademy.ru" >
+        <form class="search-form" method="POST" action="https://echo.htmlacademy.ru" >
 
             <fieldset class="search-service">
               <legend class="search-service-title">Инфраструктура</legend> 
               <label class="search-service-item">
-                <input type="checkbox" checked>Бассейн
+                <input type="checkbox" name="pool" checked>Бассейн
               </label>
               <label class="search-service-item">
-                <input type="checkbox">Парковка
+                <input type="checkbox" name="parking" >Парковка
               </label>
               <label class="search-service-item">
-                <input type="checkbox">Wi-Fi
+                <input type="checkbox" name="wi-fi" >Wi-Fi
               </label>
             </fieldset>
 
             <fieldset class="search-type">
                 <legend class="search-type-title">Тип жилья</legend> 
                 <label class="search-type-item">
-                  <input type="checkbox" checked>Гостиница
+                  <input type="checkbox" name="hotel" checked>Гостиница
                 </label>
                 <label class="search-type-item">
-                 <input type="checkbox" checked>Мотель
+                 <input type="checkbox" name="motel" checked>Мотель
                 </label>
                 <label class="search-type-item">
-                  <input type="checkbox" checked>Апартаменты
+                  <input type="checkbox" name="apartment" checked>Апартаменты
                 </label>
             </fieldset>
 
@@ -68,13 +68,13 @@
               <output name="prise-range-out"></output>
               <input type="range" id="search-prise-range" name="search-prise-range" min="0" max="3000" step="100"> -->
             </fieldset>
-            <input class="search-form-submit" type="submit" value="показать"></input>
+            <button class="search-form-submit" type="submit">Показать</button>
         </form>
 
       </section>
 
       <div class="search-sort">
-       <strong>Найдено: <output name="search-sort-result">3</output></strong>
+       <strong>Найдено:<output name="search-sort-result">3</output></strong>
        <span>Сортировка:</span>
        <ul class="search-sort-list">
          <li class= "search-sort-item"> <a href="#">По цене</a> </li>
@@ -90,17 +90,21 @@
          <figure class="hotel">
             <img src="img/amara-resort-spa.jpg" alt="Фото отеля" width="135px" height="90px">
             <figcaption class="hotel-desc">
-              <div>
+              <div class="conteiner-hotel-desc">
                 <a class="hotel-desc-link" href="#">
                   <h3 class="hotel-desc-title">Amara Resort & Spa</h3>
                 </a>
-                <span class="hotel-desc-type">Гостиница</span>
-                <span class="hotel-desc-prise">От 4000 Р.</span>
-                <a class="hotel-btn-info" href="#">подробнее</a>
-                <a class="hotel-btn-reservation" href="#">забронировать</a>
+                <div class="conteiner-type-prise">
+                 <span class="hotel-desc-type">Гостиница</span>
+                 <span class="hotel-desc-prise">От 4000 Р.</span>
+                </div>
+                <div class="conteiner-hotel-btn">
+                 <a class="hotel-btn-info" href="#">подробнее</a>
+                 <a class="hotel-btn-reservation" href="#">забронировать</a>
+                </div>
               </div>
-              <div>
-                <output name="hotel-stars">4 звезды</output>
+              <div class="hotel-rating">
+                <div class="hotel-stars hotel-stars-four" aria-label="4 звезды"></div>
                 <span class="hotel-rating">Рейтинг:<output name="hotel-rating">8,5</output></span>
               </div>
             </figcaption>
@@ -111,17 +115,21 @@
           <figure class="hotel">
               <img src="img/desert-quail-inn.jpg" alt="Фото отеля" width="135px" height="90px">
               <figcaption class="hotel-desc">
-                <div>
+                <div class="conteiner-hotel-desc">
                   <a class="hotel-desc-link" href="#">
                     <h3 class="hotel-desc-title">Desert Quail Inn</h3>
                   </a>
-                  <span class="hotel-desc-type">Мотель</span>
-                  <span class="hotel-desc-prise">От 3000 Р.</span>
-                  <a class="hotel-btn-info" href="#">подробнее</a>
-                  <a class="hotel-btn-reservation" href="#">забронировать</a>
+                  <div class="conteiner-type-prise">
+                   <span class="hotel-desc-type">Мотель</span>
+                   <span class="hotel-desc-prise">От 3000 Р.</span>
+                  </div>
+                  <div class="conteiner-hotel-btn">
+                   <a class="hotel-btn-info" href="#">подробнее</a>
+                   <a class="hotel-btn-reservation" href="#">забронировать</a>
+                  </div>
                 </div>
-                <div>
-                  <output name="hotel-stars">3 звезды</output>
+                <div class="hotel-rating">
+                  <div class="hotel-stars hotel-stars-three" aria-label="3 звезды"></div>
                   <span class="hotel-rating">Рейтинг:<output name="hotel-rating">8,9</output></span>
                 </div>
               </figcaption>
@@ -132,17 +140,21 @@
           <figure class="hotel">
             <img src="img/poco-diablo.jpg" alt="Фото отеля" width="135px" height="90px">
             <figcaption class="hotel-desc">
-              <div>
+              <div class="conteiner-hotel-desc">
                 <a class="hotel-desc-link" href="#">
                   <h3 class="hotel-desc-title">Villas at Poco Diablo</h3>
                 </a>
-                <span class="hotel-desc-type">Апартаменты</span>
-                <span class="hotel-desc-prise">От 2000 Р.</span>
-                <a class="hotel-btn-info" href="#">подробнее</a>
-                <a class="hotel-btn-reservation" href="#">забронировать</a>
+                <div class="conteiner-type-prise">
+                 <span class="hotel-desc-type">Апартаменты</span>
+                 <span class="hotel-desc-prise">От 2000 Р.</span>
+                </div>
+                <div class="conteiner-hotel-btn">
+                 <a class="hotel-btn-info" href="#">подробнее</a>
+                 <a class="hotel-btn-reservation" href="#">забронировать</a>
+                </div>
               </div>
-              <div>
-                <output name="hotel-stars">2 звезды</output>
+              <div class="hotel-rating">
+                <div class="hotel-stars hotel-stars-two" aria-label="2 звезды"></div>
                 <span class="hotel-rating">Рейтинг:<output name="hotel-rating">9,2</output></span>
               </div>
             </figcaption>

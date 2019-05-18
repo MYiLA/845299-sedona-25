@@ -25,7 +25,7 @@
               <a class="nav-link" href="hotels.html">ГОСТИНИЦЫ</a> 
             </li>
           </ul>
-          <a class="header-logo" href="index.html">
+          <a class="header-logo">
             <img src="img/index-logo.svg" alt="Логотип «CITY OF SEDONA»" width="140px" height="71px">
           </a>
         </nav>
@@ -116,30 +116,30 @@
 
        <button class="booking-btn-title" type="button">Поиск гостиницы в седоне</button>
 
-       <form class="booking-form" action="post">
-          <p class="booking-data-arrive">
+       <form class="booking-form" method="POST" action="https:https://echo.htmlacademy.ru">
+          <div class="booking-data-arrive">
             <label for="data-arrive-field">Дата заезда:</label>
             <input type="text" id="data-arrive-field" name="data-arrive" value="24 апреля 2017">
             <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
-          </p>
-          <p class="booking-data-departure">
+          </div>
+          <div class="booking-data-departure">
             <label for="data-departure-field">Дата выезда:</label>
             <input type="text" id="data-departure-field" name="data-departure"  value="4 июля 2017">
             <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
-          </p>
-          <p class="booking-number-adult">
+          </div>
+          <div class="booking-number-adult">
             <label for="number-adult-field">Взрослые:</label>
-            <button class="btn-minus" type="button"><img src="img/btn-minus.svg" alt="Меньше" width="12px" height="3px" style="background-color:black"></button>
+            <button class="btn-minus" type="button" aria-label="Уменьшить на 1"></button>
             <input type="number" id="number-adult-field" name="number-adult" min="1" max="30" step="1" value="2">
-            <button class="btn-plus" type="button"><img src="img/btn-plus.svg" alt="Больше" width="11px" height="11px" style="background-color:black"></button>
-          </p>
-          <p class="booking-number-children">
+            <button class="btn-plus" type="button" aria-label="Увеличить на 1"></button>
+          </div>
+          <div class="booking-number-children">
             <label for="number-children-field">Дети:</label>
-            <button class="btn-minus" type="button"><img src="img/btn-minus.svg" alt="Меньше" width="12px" height="3px" style="background-color:black"></button>
+            <button class="btn-minus" type="button" aria-label="Уменьшить на 1"></button>
             <input type="number" id="number-children-field" name="number-children" min="0" max="30" step="1" value="0">
-            <button class="btn-plus" type="button"><img src="img/btn-plus.svg" alt="Больше" width="11px" height="11px" style="background-color:black"></button>
-          </p>
-          <p class="booking-btn-search"><button type="button">Найти</button></p>
+            <button class="btn-plus" type="button" aria-label="Увеличить на 1"></button>
+          </div>
+          <button class="booking-btn-search" type="submit">Найти</button>
        </form>
        
        <img src="img/map.png" alt="Карта с отелями Седоны" width="1200px" height="593px">
