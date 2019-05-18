@@ -113,33 +113,33 @@
        <p class="booking-desk">
          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
        </p>
+
+       <button class="booking-btn-title" type="button">Поиск гостиницы в седоне</button>
+
        <form class="booking-form" action="post">
-         <fieldset class="booking-fieldset">
-           <legend class="booking-title"> <button class="booking-btn-title" type="button">Поиск гостиницы в седоне</button> </legend> 
-           <p class="booking-data-arrive">
-             <label>
-              Дата заезда:<input type="text" value="24 апреля 2017">
-             </label>
-             <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
-           </p>
-           <p class="booking-data-departure">
-             <label>
-                Дата выезда: <input type="text" value="4 июля 2017">
-             </label>
-             <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
-           </p>
-           <p class="booking-number-adult">
-             <label>
-               Взрослые:<input type="number" min="1" max="30" step="1" placeholder="2">
-             </label>
-           </p>
-           <p class="booking-number-children">
-              <label>
-               Дети:<input type="number" min="0" max="30" step="1" placeholder="0">
-              </label>
-           </p>
-           <p class="booking-btn-search"><button type="button">Найти</button></p>
-        </fieldset>
+          <p class="booking-data-arrive">
+            <label for="data-arrive-field">Дата заезда:</label>
+            <input type="text" id="data-arrive-field" name="data-arrive" value="24 апреля 2017">
+            <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
+          </p>
+          <p class="booking-data-departure">
+            <label for="data-departure-field">Дата выезда:</label>
+            <input type="text" id="data-departure-field" name="data-departure"  value="4 июля 2017">
+            <button class="booking-btn-calendar" type="button"><img src="img/btn-calendar.svg" alt="Календарь" width="21px" height="22px"></button>
+          </p>
+          <p class="booking-number-adult">
+            <label for="number-adult-field">Взрослые:</label>
+            <button class="btn-minus" type="button"><img src="img/btn-minus.svg" alt="Меньше" width="12px" height="3px" style="background-color:black"></button>
+            <input type="number" id="number-adult-field" name="number-adult" min="1" max="30" step="1" value="2">
+            <button class="btn-plus" type="button"><img src="img/btn-plus.svg" alt="Больше" width="11px" height="11px" style="background-color:black"></button>
+          </p>
+          <p class="booking-number-children">
+            <label for="number-children-field">Дети:</label>
+            <button class="btn-minus" type="button"><img src="img/btn-minus.svg" alt="Меньше" width="12px" height="3px" style="background-color:black"></button>
+            <input type="number" id="number-children-field" name="number-children" min="0" max="30" step="1" value="0">
+            <button class="btn-plus" type="button"><img src="img/btn-plus.svg" alt="Больше" width="11px" height="11px" style="background-color:black"></button>
+          </p>
+          <p class="booking-btn-search"><button type="button">Найти</button></p>
        </form>
        
        <img src="img/map.png" alt="Карта с отелями Седоны" width="1200px" height="593px">

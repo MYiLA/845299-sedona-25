@@ -34,53 +34,42 @@
       <section class="search-hotel">
         <h2 class="visually-hidden">Фильтр отелей</h2>
         
-        <form class="search-form" action="get" oninput="prise-range-out" value="search-prise-range">
+        <form class="search-form" method="post" action="https:https://echo.htmlacademy.ru" >
+
             <fieldset class="search-service">
               <legend class="search-service-title">Инфраструктура</legend> 
-              <p class="search-service-item">
-                <label>
-                 <input type="checkbox" checked>Бассейн
-                </label>
-              </p>
-              <p class="search-service-item">
-                <label>
-                 <input type="checkbox">Парковка
-                </label>
-              </p>
-              <p class="search-service-item">
-                <label>
-                  <input type="checkbox">Wi-Fi
-                </label>
-              </p>
+              <label class="search-service-item">
+                <input type="checkbox" checked>Бассейн
+              </label>
+              <label class="search-service-item">
+                <input type="checkbox">Парковка
+              </label>
+              <label class="search-service-item">
+                <input type="checkbox">Wi-Fi
+              </label>
             </fieldset>
+
             <fieldset class="search-type">
                 <legend class="search-type-title">Тип жилья</legend> 
-                <p class="search-type-item">
-                  <label>
-                   <input type="checkbox" checked>Гостиница
-                  </label>
-                </p>
-                <p class="search-type-item">
-                  <label>
-                   <input type="checkbox" checked>Мотель
-                  </label>
-                </p>
-                <p class="search-type-item">
-                  <label>
-                    <input type="checkbox" checked>Апартаменты
-                  </label>
-                </p>
-
+                <label class="search-type-item">
+                  <input type="checkbox" checked>Гостиница
+                </label>
+                <label class="search-type-item">
+                 <input type="checkbox" checked>Мотель
+                </label>
+                <label class="search-type-item">
+                  <input type="checkbox" checked>Апартаменты
+                </label>
             </fieldset>
-            <div class="search-price">
+
+            <fieldset class="search-price">
+            <!-- <div class="search-price">
               <label for="search-prise-range">Стоимость в сутки(р):</label>
               <output name="prise-range-out"></output>
-              <input type="range" id="search-prise-range" name="search-prise-range" min="0" max="3000" step="100">
-
-            </div>
-            <p class="search-form-submit"><input type="submit" action="https://echo.htmlacademy.ru" value="показать"></input></p>
+              <input type="range" id="search-prise-range" name="search-prise-range" min="0" max="3000" step="100"> -->
+            </fieldset>
+            <input class="search-form-submit" type="submit" value="показать"></input>
         </form>
-        <!-- Сдесь будет форма -->
 
       </section>
 
@@ -92,8 +81,8 @@
          <li class= "search-sort-item"> <a href="#">По типу</a> </li>
          <li class= "search-sort-item"> <a href="#">По рейтингу</a> </li>
        </ul>
-       <a class="search-control-top">вверх</a>
-       <a class="search-control-down">вниз</a>
+       <a class="search-control-top" href="#"><img src="img/icon-dir-up.svg" alt="по возрастанию" width="11px" height="10px"></a>
+       <a class="search-control-down" href="#"><img src="img/icon-dir-down.svg" alt="по убыванию" width="11px" height="10px"></a>
       </div>
       
       <ul class="hotels-list">
