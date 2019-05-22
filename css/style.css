@@ -1,14 +1,15 @@
 body {
   margin: 0;
+  text-align: center;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
 
-  background-color: #f2f2f2;
+  background-color: rgb(242, 242, 242);
 }
 
 
@@ -19,8 +20,62 @@ a {
 .container-center {
   width:1200px;
   margin:0 auto;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0 15px 0px rgba(0, 1, 1, 0.20);
+}
+
+.nav {
+  margin: -14px auto;
+  vertical-align: center;
+  height: 56px;
+  width: 1200px;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav,
+.nav-list,
+.reasons-list,
+.features-list,
+.search-sort-list,
+.hotels-list,
+.social-list
+ {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline;
+  /* padding-top: 22px; */
+  vertical-align: center;
+  font-weight: 600;
+  /* margin: 162px; */
+}
+
+.nav a,
+.nav-list a {
+  color: rgb(0, 0, 0);
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav-list a:hover,
+.nav-list a:focus {
+  color: rgb(129, 179, 210);
+}
+
+.nav a:active,
+.nav-list a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.nav-item .nav-active,
+.nav-item .nav-active:focus,
+.nav-item .nav-active:hover {
+  color: rgb(118, 89, 87);
+}
+
+.main {
+  width:1200px auto;
   background-image:
   url("../img/intro-mask.svg"),
   url("../img/background-photo.jpg");
@@ -29,62 +84,124 @@ a {
   center top;
   background-repeat: no-repeat;
   background-size:
-  1200px 58px,
+  1200px 59px,
   1200px 773px;
 }
 
-.nav {
-  margin: -14px;
-  vertical-align: top;
-  height: 56px;
-  weight: 1200px;
+/* .main-background {
+position: absolute;
+background-color: rgb(115, 127, 136);
+height: 773px;
+width: 1200px;
+} */
 
+.reasons {
+  background-color: rgb(255, 255, 255);
+  margin-top: 231px;
+}
+
+.reasons-title {
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 600;
-
-  background-color: #ffffff;
 }
 
-
-.nav,
-.nav-list {
-  list-style: none;
-  vertical-align: center;
+.reason-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 600;
 }
 
-
-.nav a,
-.nav-list a {
-  color: #000000;
+.reason-title-white {
+ color: rgb(255, 255, 255)
 }
 
-
-.nav a:hover,
-.nav a:focus,
-.nav-list a:hover,
-.nav-list a:focus {
-  color: #81b3d2;
+.reason-info {
+  background-color: rgb(129, 179, 210);
 }
 
-.header-logo{
-  
-  
+.reason-title-white + .reason-number,
+.reason-title-white ~ .reason-desc {
+  color: rgb(255, 255, 255)
 }
 
-.reasons-title{
-
+.feature-title{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 600;
 }
 
+.reason-item-bottom {
+  background-color: rgb(238, 238, 238);
+}
 
+.booking-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
 
+.booking-btn-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(118, 99, 87);
+}
 
+.booking-form{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+}
 
+.booking-data-arrive input,
+.booking-data-departure input,
+.booking-number-adult input,
+.booking-number-children input,
+.btn-minus,
+.btn-plus {
+  border: none;
+  background-color: rgb(242, 242, 242);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+}
 
+.booking-btn-calendar {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
 
+.booking-btn-search {
+  border: none;
+  background-color: rgb(129, 179, 210);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  color:  rgb(255, 255, 255);
+}
 
+.footer {
+background-color: rgba(255, 255, 255, 0.9);
+}
 
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  color:  rgb(0, 0, 0);
+}
+.social-button {
+background-color: rgb(129, 179, 210);
+}
 
-
-
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color:  rgb(0, 0, 0);
+}
 
 .visually-hidden {
   position: absolute;
