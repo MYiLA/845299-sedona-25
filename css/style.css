@@ -1,11 +1,74 @@
+body {
+margin: 0;
+
+font-family: "PT Sans", Arial, sans-serif;
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+color: #000000;
+text-transform: uppercase;
+
+background-color: #f2f2f2;
+
+background-image:
+url("../img/intro-mask.svg"),
+url("../img/background-photo.jpg");
+background-position:
+center top 533px,
+center top;
+background-repeat: no-repeat;
+background-size:
+1200px 58px,
+1200px 773px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.nav{
+font-weight: 600;
+}
+.nav,
+.nav-list {
+  list-style: none;
+}
+.nav a,
+.nav-list a {
+  color: #000000;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav-list a:hover,
+.nav-list a:focus {
+color: #81b3d2;
+}
+
+.reasons-title{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   clip: rect(0 0 0 0);
-   overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
