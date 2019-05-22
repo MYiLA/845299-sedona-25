@@ -75,6 +75,7 @@ a {
 }
 
 .main {
+  background-color: rgb(89, 128, 170);
   width:1200px auto;
   background-image:
   url("../img/intro-mask.svg"),
@@ -139,6 +140,7 @@ width: 1200px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
+  background-color: rgb(255, 255, 255);
 }
 
 .booking-btn-title {
@@ -149,7 +151,11 @@ width: 1200px;
   background-color: rgb(118, 99, 87);
 }
 
-.booking-form{
+.booking {
+  background-color: rgb(255, 255, 255);
+}
+
+.booking-form {
   font-size: 14px;
   line-height: 26px;
   font-weight: 600;
