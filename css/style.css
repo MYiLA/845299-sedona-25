@@ -1,25 +1,14 @@
 body {
-margin: 0;
+  margin: 0;
 
-font-family: "PT Sans", Arial, sans-serif;
-font-size: 14px;
-line-height: 21px;
-font-weight: 400;
-color: #000000;
-text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
 
-background-color: #f2f2f2;
-
-background-image:
-url("../img/intro-mask.svg"),
-url("../img/background-photo.jpg");
-background-position:
-center top 533px,
-center top;
-background-repeat: no-repeat;
-background-size:
-1200px 58px,
-1200px 773px;
+  background-color: #f2f2f2;
 }
 
 
@@ -27,23 +16,58 @@ a {
   text-decoration: none;
 }
 
-.nav{
-font-weight: 600;
+.container-center {
+  width:1200px;
+  margin:0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0 15px 0px rgba(0, 1, 1, 0.20);
+  background-image:
+  url("../img/intro-mask.svg"),
+  url("../img/background-photo.jpg");
+  background-position:
+  center top 533px,
+  center top;
+  background-repeat: no-repeat;
+  background-size:
+  1200px 58px,
+  1200px 773px;
 }
+
+.nav {
+  margin: -14px;
+  vertical-align: top;
+  height: 56px;
+  weight: 1200px;
+
+  font-weight: 600;
+
+  background-color: #ffffff;
+}
+
+
 .nav,
 .nav-list {
   list-style: none;
+  vertical-align: center;
 }
+
+
 .nav a,
 .nav-list a {
   color: #000000;
 }
 
+
 .nav a:hover,
 .nav a:focus,
 .nav-list a:hover,
 .nav-list a:focus {
-color: #81b3d2;
+  color: #81b3d2;
+}
+
+.header-logo{
+  
+  
 }
 
 .reasons-title{
