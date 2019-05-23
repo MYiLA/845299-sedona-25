@@ -1,3 +1,10 @@
+.container-center {
+  width: 1200px;
+  margin: 0 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0 15px 0px rgba(0, 1, 1, 0.20);
+}
+
 .body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -9,20 +16,14 @@
   background-color: rgb(242, 242, 242);
 }
 
-
 a {
   text-decoration: none;
 }
 
-.container-center {
-  width:1200px;
-  margin:0 auto;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0 15px 0px rgba(0, 1, 1, 0.20);
-}
+
 
 .nav {
-  margin: -14px auto;
+  margin: -14px 100%;
   vertical-align: center;
   height: 56px;
   width: 1200px;
@@ -35,17 +36,14 @@ a {
 .features-list,
 .search-sort-list,
 .hotels-list,
-.social-list
- {
+.social-list {
   list-style: none;
 }
 
 .nav-item {
   display: inline;
-  /* padding-top: 22px; */
   vertical-align: center;
   font-weight: 600;
-  /* margin: 162px; */
 }
 
 .nav a,
@@ -73,7 +71,7 @@ a {
 
 .main {
   background-color: rgb(89, 128, 170);
-  width:1200px auto;
+  width: 1200px auto;
   background-image:
   url("../img/intro-mask.svg"),
   url("../img/background-photo.jpg");
