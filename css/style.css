@@ -302,11 +302,14 @@ background-color: rgba(255, 255, 255, 0.9);
   width: 1200px;
 }
 
+
 .search-service {
+  list-style: none;
   color: rgb(255, 255, 255);
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  border: none;
 }
 
 .search-service-title {
@@ -314,18 +317,50 @@ background-color: rgba(255, 255, 255, 0.9);
   line-height: 21px;
   font-weight: 600;
 }
+/* (Как задать стили чекбоксам?) */
+.search-service-item:hover + label,
+.search-service-item:focus + label {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.search-service-item:disabled + label {
+  color: rgb(106, 106, 107);
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .search-type {
+  list-style: none;
   color: rgb(255, 255, 255);
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  border: none;
+}
+
+.search-type-item:hover + label,
+.search-type-item:focus + label {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.search-type-item:disabled + label {
+  color: rgb(106, 106, 107);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .search-type-title {
   font-size: 16px;
   line-height: 21px;
   font-weight: 600;
+}
+
+.search-price {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  border: none;
 }
 
 .search-form-submit {
