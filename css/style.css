@@ -21,7 +21,6 @@ a {
 
 .nav {
   vertical-align: center;
-  height: 90px; /*56px */
   width: 1200px;
   background-color: rgb(255, 255, 255);
 }
@@ -61,14 +60,24 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1200px 703px;
-  min-height: 508px;
+  background-clip: padding-box;
+  height: 433px;
   width: 1200px;
   padding-top: 76px;
-  text-align: center;
+  /* padding-left: 50%;
+  padding-right: 50%; */
+  /* text-align: center; */
 }
 
-.intro::after {
-  content: url("../img/intro-mask.svg");
+.intro::before {
+  content: "";
+  width: 1200px;
+  height: 433px;
+  background: url("../img/intro-mask.svg");
+  position: absolute;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
 }
 
 .reasons {
@@ -101,6 +110,8 @@ text-align: center;
 
 .reasons-desc {
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .reason-title {
@@ -403,7 +414,7 @@ background-color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  border-bottom: 1px dashed rgb(129, 179, 210);
+  border-bottom: 1px dotted rgb(129, 179, 210);
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -496,3 +507,159 @@ background-color: rgba(255, 255, 255, 0.9);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* ------------------- Сеточные стили ---------------- */
+
+  /* Временно для сетки */
+/* body {
+ background-image: url("../img/sedona-index.jpg");
+ background-size: 1280px auto;
+ background-repeat: no-repeat;
+ background-position-x: -400px
+}
+
+body>*{
+background-color: rgba(38, 0, 255, 0.2)
+}
+body>*>*{
+  background-color: rgb(84, 255, 5)
+  }
+body>*>*>*{
+  background-color: rgb(255, 251, 0)
+  }
+body>*>*>*>*{ */
+  /* background-color: rgb(255, 0, 0) */
+  }
+
+.container-center {
+  display: block;
+}
+ /* ------------------------- */
+
+ .container-center{
+width: 1200px;
+ }
+
+.header {
+  margin-bottom: 0;
+}
+
+.header-logo {
+  width: 140px;
+  height: 56px;
+  padding-bottom: 15px;
+}
+
+.nav {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ flex-basis: 370px;
+ margin-left: 73px;
+ margin-right: 73px;
+ width: 1056px;
+ box-sizing: border-box;
+ height: 56px;
+}
+
+.nav-list-left {
+  order: 1;
+}
+
+.intro {
+  margin-bottom: 59px
+}
+
+.reasons {
+ margin-bottom: 48px;
+}
+
+.reasons-title {
+ display: block;
+ width: 442px;
+ margin-bottom: 12px;
+}
+
+.reasons-desc {
+ display: inline-block;
+ width: 490px;
+ margin-bottom: 50px;
+}
+
+.reasons-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 1100px;
+}
+
+.reasons-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  min-height: 256px;
+}
+
+.reason-info {
+  width: 400px;
+  height: 256px;
+}
+
+.reason-img {
+  width: 800px;
+}
+
+.features-list {
+  width: 1200px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+.features-item {
+width: 400px;
+min-height: 330px;
+}
+
+.reason-item-bottom {
+  width: 400px;
+  display: block;
+}
+.booking-title {
+display: block;
+margin-bottom: 23px;
+}
+
+.booking-desk {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.booking-btn-title {
+
+}
+
+.booking-form {
+ width: 567px;
+ min-height: 396px;
+ padding: 55px;
+}
+/* .intro {
+  padding: 0;
+  margin: 0;
+width: 1200px;
+height: 509px;
+} */
+
+/* .nav-list {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ flex-basis: 128px;
+ min-height: 56px;
+ align-items: center;
+} */
