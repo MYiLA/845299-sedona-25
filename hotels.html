@@ -66,13 +66,17 @@
                 </label>
             </fieldset>
 
-            <fieldset class="search-price">
-            <!-- <div class="search-price">
+            <div class="conteiner-prise">
+              <fieldset class="search-price">
+              <!-- <div class="search-price">
               <label for="search-prise-range">Стоимость в сутки(р):</label>
               <output name="prise-range-out"></output>
               <input type="range" id="search-prise-range" name="search-prise-range" min="0" max="3000" step="100"> -->
-            </fieldset>
-            <button class="search-form-submit" type="submit">Показать</button>
+              </fieldset>
+              <button class="search-form-submit" type="submit">Показать</button>
+            </div>
+
+
         </form>
 
       </section>
@@ -85,8 +89,11 @@
          <li class= "search-sort-item"> <a href="#">По типу</a> </li>
          <li class= "search-sort-item"> <a href="#">По рейтингу</a> </li>
        </ul>
-       <a class="search-control-top" href="#"><img src="img/icon-dir-up.svg" alt="по возрастанию" width="11" height="10"></a>
-       <a class="search-control-down" href="#"><img src="img/icon-dir-down.svg" alt="по убыванию" width="11" height="10"></a>
+       <div class="conteiner-control">
+         <a class="search-control-top" href="#"><img src="img/icon-dir-up.svg" alt="по возрастанию" width="11" height="10"></a>
+         <a class="search-control-down" href="#"><img src="img/icon-dir-down.svg" alt="по убыванию" width="11" height="10"></a>
+       </div>
+
       </div>
 
       <ul class="hotels-list">
@@ -167,7 +174,7 @@
       </ul>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer-hotels">
       <a class="footer-hashtag" href="#">#VISITSEDONA</a>
       <ul class="social-list">
           <li class="social-item">
@@ -181,8 +188,8 @@
           </li>
        </ul>
       <div class="footer-copyright">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <span class="footer-copyright-span">Website by</span>
+        <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/html-akademy.svg"  alt="HTML Academy" width="115" height="41">
         </a>
       </div>
