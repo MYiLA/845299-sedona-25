@@ -53,7 +53,7 @@ a {
   color: rgb(118, 89, 87);
 }
 
-.main-index {
+/* .main-index {
   background-color: rgb(89, 128, 170);
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ a {
   position: absolute;
   background-repeat: no-repeat;
   top: 510px;
-}
+} */
 
 .intro {
   height: 433px;
@@ -557,7 +557,6 @@ position: relative;
 
 .nav-list {
   width: 100%;
-  min-height: 56px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -565,9 +564,8 @@ position: relative;
 
 .nav-item {
  width: 20%;
- height: 56px;
  padding-left: 72px;
- padding-top: 22px;
+ padding-top: 20px;
  box-sizing: border-box;
 }
 
@@ -575,11 +573,31 @@ position: relative;
   margin-right: 20%;
 }
 
-.reasons-container {
-  padding-top: 61px;
-  padding-bottom: 38px;
+.intro {
+  height: 511px;
   width: 1200px;
-  min-height: 216px;
+  box-sizing: border-box;
+  background-color: rgb(89, 128, 170);
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 703px;
+  background-clip: padding-box;
+}
+
+.intro::before {
+  content: "";
+  width: 1200px;
+  height: 59px;
+  background: url("../img/intro-mask.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 510px;
+  right: 0px;
+}
+
+.reasons-container {
+  width: 1200px;
+  min-height: 155px;
   background-color: rgb(255, 255, 255);
   box-sizing: border-box;
 }
@@ -618,9 +636,10 @@ position: relative;
 .reason-info {
   width: 400px;
   height: 256px;
-  padding-top: 50px;
+  padding-top: 45px;
   padding-left: 48px;
   padding-right: 48px;
+  padding-bottom: 50px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -649,6 +668,7 @@ position: relative;
 }
 
 .reason-img {
+  display: block;
   width: 800px;
 }
 
@@ -1020,3 +1040,4 @@ flex-wrap: wrap;
 .hotel-desc-prise {
   margin: 0;
 }
+
