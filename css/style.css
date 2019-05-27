@@ -53,23 +53,6 @@ a {
   color: rgb(118, 89, 87);
 }
 
-/* .main-index {
-  background-color: rgb(89, 128, 170);
-  background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-size: 1200px 703px;
-}
-
-.main-index::before {
-  content: "";
-  width: 1200px;
-  height: 59px;
-  background: url("../img/intro-mask.svg");
-  position: absolute;
-  background-repeat: no-repeat;
-  top: 510px;
-} */
-
 .intro {
   height: 433px;
   width: 1200px;
@@ -292,17 +275,6 @@ background-color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
   color:  rgb(0, 0, 0);
 }
-
-/* .search-form{
-  background-color: rgb(89, 128, 170);
-  background-image: url("../img/filter-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1200px 800px;
-  min-height: 217px;
-  width: 1200px;
-} */
-
 
 .search-service {
   list-style: none;
