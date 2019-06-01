@@ -491,13 +491,17 @@ box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0);
 }
 
-.booking-btn-calendar:hover,
-.booking-btn-calendar:focus {
-
+.booking-btn-calendar svg {
+  fill: rgb(202, 202, 202);
 }
 
-.booking-btn-calendar:active {
+.booking-btn-calendar svg:hover,
+.booking-btn-calendar svg:focus {
+  fill: rgb(0, 0, 0);
+}
 
+.booking-btn-calendar svg:active {
+  fill: rgb(129, 179, 210);
 }
 
 .booking-btn-search {
