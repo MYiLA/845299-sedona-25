@@ -630,8 +630,13 @@ box-sizing: border-box;
   margin: 0;
   display: block;
   height: 120px;
-  padding-top: 40px;
+  height: 45px;
+  width: 120px;
+  margin-top: 40px;
   box-sizing: border-box;
+
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
 }
 
 .footer-copyright-link path {
