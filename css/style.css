@@ -68,36 +68,27 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .nav-item {
-  width: 20%;
-  padding: 20px;
+  width: 128px;
+  padding-top: 18px;
+  padding-bottom: 19px;
   font-weight: 600;
-  text-align: center;
 }
 
-.nav-item:nth-child(2) {
-  margin-right: 20%;
+.nav-item:nth-child(4n+2) {
+  margin-right: 150px;
 }
 
-.nav-item:nth-child(1),
-.nav-item:nth-child(2),
-.nav-item:nth-child(5n+5),
-.nav-item:nth-child(5n+6) {
-  text-align: left;
-  padding-left: 73px;
-}
-
-.nav-item:nth-child(3),
-.nav-item:nth-child(4),
-.nav-item:nth-child(5n+8),
-.nav-item:nth-child(5n+9) {
+.text-right {
   text-align: right;
-  padding-right: 73px;
 }
 
 .nav-link {
@@ -614,8 +605,6 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-right: 101px;
-  padding-left: 132px;
   padding-top: 36px;
   padding-bottom: 36px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -626,25 +615,24 @@ html {
 }
 
 .footer-hashtag {
+  width: 400px;
+  text-align: center;
   margin-right: 0;
-  margin-right: 256px;
   padding-top: 14px;
   padding-bottom: 14px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 600;
   color:  rgb(0, 0, 0);
-   background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 .social-list {
-  width: 150px;
+  width: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
-  margin-right: 228px;
   padding: 0;
   list-style: none;
 }
@@ -668,8 +656,6 @@ html {
   align-items: center;
   justify-content: center;
   background-color: rgb(129, 179, 210);
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 .social-button:hover,
@@ -686,22 +672,23 @@ html {
 }
 
 .footer-copyright {
+  width: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color:  rgb(0, 0, 0);
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 .footer-copyright-span {
   display: block;
-  margin-right: 8px;
   padding-top: 9px;
   padding-bottom: 9px;
+  padding-right: 7px;
 }
 
 .footer-copyright path {
