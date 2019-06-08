@@ -77,14 +77,16 @@ html {
 }
 
 .nav-item {
-  width: 128px;
+  width: 236px;
   padding-top: 18px;
   padding-bottom: 19px;
   font-weight: 600;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
 }
 
-.nav-item:nth-child(4n+2) {
-  margin-right: 150px;
+.nav-item:nth-child(2) {
+  margin-right: 96px;
 }
 
 .text-right {
