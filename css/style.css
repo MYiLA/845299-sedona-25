@@ -1,5 +1,3 @@
-
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -30,7 +28,7 @@ html {
 }
 
 .body {
-  font-family: "PT Sans", "Arial", "sans-serif";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -43,7 +41,6 @@ html {
   width: 1200px;
   position: relative;
   margin: 0 auto;
-
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.20);
 }
@@ -61,10 +58,6 @@ html {
   top: 0;
   right: 50%;
   transform: translateX(50%);
-  -webkit-transform: translate(50%);
-  -moz-transform: translate(50%);
-  -ms-transform: translate(50%);
-  -o-transform: translate(50%);
 }
 
 .nav {
@@ -205,7 +198,6 @@ html {
   margin: 0 auto;
   margin-bottom: 30px;
   width: 160px;
-
   font-size: 21px;
   line-height: 21px;
   font-weight: 600;
@@ -238,8 +230,6 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 60px;
-  padding-right: 60px;
   background-color: rgb(255, 255, 255);
   width: 1200px;
   display: flex;
@@ -256,7 +246,11 @@ html {
 }
 
 .features-item:nth-child(3n) {
-  margin-right: 0;
+  margin-right: 60px;
+}
+
+.features-item:nth-child(3n+1) {
+  margin-left: 60px;
 }
 
 .feature-title{
@@ -327,7 +321,7 @@ html {
 .booking-title {
   display: block;
   margin: 0 auto;
-  margin-top: 57px;
+  padding-top: 57px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 30px;
@@ -348,11 +342,12 @@ html {
   width: 567px;
   min-height: 86px;
   padding: 10px;
-  text-transform: uppercase;
   margin: 0 auto;
+  border: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 600;
+  text-transform: uppercase;
   color: rgb(255, 255, 255);
   background-color: rgb(118, 99, 87);
 }
@@ -369,8 +364,9 @@ html {
 
 .booking-form {
   width: 567px;
-  margin-left: 316px;
   position: absolute;
+  right: 50%;
+  transform: translate(50%);
   padding: 55px;
   font-size: 14px;
   line-height: 26px;
@@ -381,19 +377,28 @@ html {
 .booking-data-arrive {
   position: relative;
   margin-bottom: 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
  }
 
 .booking-data-arrive label {
   display: inline-block;
   padding: 0;
+  padding-top: 6px;
   margin: 0;
   width: 107px;
-  padding-right: 10px;
+
 }
 
 .booking-data-departure {
   position: relative;
   margin-bottom: 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .booking-data-departure label {
@@ -401,12 +406,12 @@ html {
   padding: 0;
   margin: 0;
   width: 107px;
-  padding-right: 10px;
 }
 
 .data-input {
   width: 346px;
   border: none;
+  border: 2px solid transparent;
   padding-top: 6px;
   padding-left: 13px;
   padding-bottom: 6px;
@@ -414,6 +419,8 @@ html {
   font-size: 14px;
   line-height: 26px;
   font-weight: 600;
+  outline: none;
+
 }
 
 .data-input:hover,
@@ -423,7 +430,7 @@ html {
 
 .data-input:active {
   background-color: rgb(255,255, 255);
-  border-color: rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
 }
 
 .booking-btn-calendar {
@@ -432,7 +439,6 @@ html {
   right: 0;
   top: 6px;
   display: block;
-
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
@@ -495,12 +501,11 @@ html {
   position: relative;
   padding: 0;
   border: none;
+  border: 2px solid transparent;
   background-color: rgb(242, 242, 242);
   width: 38px;
   height: 38px;
   cursor: pointer;
-  /* background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green; */
 }
 
 .btn-minus::before {
@@ -522,9 +527,23 @@ html {
   background-color: rgb(129, 179, 210);
 }
 
+.btn-minus:hover,
+.btn-minus:focus,
+.btn-plus:hover,
+.btn-plus:focus {
+  background-color: rgb(235, 235, 235);
+}
+
+.btn-minus:active,
+.btn-plus:active {
+  background-color: rgb(255,255, 255);
+  border: 2px solid rgb(229, 229, 229);
+}
+
 .btn-plus {
   position: relative;
   border: none;
+  border: 2px solid transparent;
   background-color: rgb(242, 242, 242);
   width: 38px;
   height: 38px;
@@ -539,10 +558,6 @@ html {
   width: 12px;
   height: 3px;
   background-color: rgb(169, 169, 169);
-  -webkit-transform: translate(50%);
-  -moz-transform: translate(50%);
-  -ms-transform: translate(50%);
-  -o-transform: translate(50%);
 }
 
 .btn-plus::after {
@@ -553,10 +568,6 @@ html {
   width: 12px;
   height: 3px;
   background-color: rgb(169, 169, 169);
-  -webkit-transform: translate(50%) rotate(90deg);
-  -moz-transform: translate(50%) rotate(90deg);
-  -ms-transform: translate(50%) rotate(90deg);
-  -o-transform: translate(50%) rotate(90deg);
 }
 
 .btn-plus:hover::before,
@@ -623,6 +634,8 @@ html {
   line-height: 26px;
   font-weight: 600;
   color:  rgb(0, 0, 0);
+   background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
 }
 
 .social-list {
@@ -648,7 +661,6 @@ html {
   margin-right: 0;
 }
 
-
 .social-button {
   width: 46px;
   height: 48px;
@@ -656,6 +668,8 @@ html {
   align-items: center;
   justify-content: center;
   background-color: rgb(129, 179, 210);
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
 }
 
 .social-button:hover,
@@ -679,6 +693,8 @@ html {
   line-height: 26px;
   font-weight: 400;
   color:  rgb(0, 0, 0);
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
 }
 
 .footer-copyright-span {
@@ -692,13 +708,13 @@ html {
   fill: rgb(0, 0, 0);
 }
 
-.footer-copyright path:active {
-  fill: rgb(189, 187, 188);
+.footer-copyright:hover path,
+.footer-copyright:focus path {
+  fill: rgb(129, 179, 210);
 }
 
-.footer-copyright path:hover,
-.footer-copyright path:focus {
-  fill: rgb(129, 179, 210);
+.footer-copyright:active path {
+  fill: rgb(189, 187, 188);
 }
 
 /* ------------------- ||||||||||||hotels|||||||||||| ---------------- */
@@ -848,9 +864,7 @@ html {
 .search-type input:focus + .search-type-item::before,
 .search-service input:focus + .search-service-item::before {
   filter: drop-shadow( 0 0 3 rgb(0, 0, 0));
-  -webkit-filter: drop-shadow( 0 0 3 rgb(0, 0, 0));
 }
-
 
 .container-price {
   display: block;
@@ -974,7 +988,7 @@ html {
   padding-bottom: 4px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 2px;
-  font-family: "PT Sans", "Arial", "sans-serif";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
