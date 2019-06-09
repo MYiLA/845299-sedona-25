@@ -283,18 +283,18 @@ html {
   padding-bottom: 60px;
   background-color: rgb(238, 238, 238);
   text-align: center;
+  position: relative;
   z-index: 1;
 }
 
 .reason-item-bottom .reason-desc{
   padding-right: 60px;
   padding-left: 60px;
-  position: relative;
-  z-index: 1;
 }
 
 .container-booking {
   position: relative;
+  padding-top: 49px;
   width: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 1;
@@ -304,8 +304,7 @@ html {
   max-width: 570px;
   display: block;
   margin: 0 auto;
-  padding-top: 49px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   text-align: center;
   font-size: 30px;
   line-height: 36px;
@@ -362,6 +361,11 @@ html {
 
 .booking-form-hidden {
   display: none;
+}
+
+@keyframes move-down {
+  0% { transform: translate(50%, -400px); }
+  100% { transform: translateY(50%, 0) }
 }
 
 .booking-data-arrive {
@@ -584,11 +588,6 @@ html {
 .booking-btn-search:active {
   background-color: rgb(84, 150, 189);
   color: rgba(255, 255, 255, 0.3);
-}
-
-@keyframes move-down {
-  0% { transform: translate(50%, -400px); }
-  100% { transform: translateY(50%, 0) }
 }
 
 .modal-show {
