@@ -283,34 +283,40 @@ html {
   padding-bottom: 60px;
   background-color: rgb(238, 238, 238);
   text-align: center;
+  z-index: 1;
 }
 
 .reason-item-bottom .reason-desc{
   padding-right: 60px;
   padding-left: 60px;
+  position: relative;
+  z-index: 1;
 }
 
-.booking {
-  padding-top: 49px;
+.container-booking {
+  position: relative;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
 }
 
 .booking-title {
   max-width: 570px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 24px;
+  padding-top: 49px;
+  padding-bottom: 24px;
   text-align: center;
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
-  background-color: rgb(255, 255, 255);
 }
 
 .booking-desk {
   max-width: 570px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 47px;
+  padding-bottom: 47px;
   text-align: center;
   line-height: 24px;
 }
@@ -344,13 +350,18 @@ html {
   width: 567px;
   position: absolute;
   right: 50%;
-  transform: translate(50%);
+  transform: translateX(50%);
   padding: 54px;
   padding-top: 56px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 600;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.20);
+}
+
+.booking-form-hidden {
+  display: none;
 }
 
 .booking-data-arrive {
@@ -573,6 +584,17 @@ html {
 .booking-btn-search:active {
   background-color: rgb(84, 150, 189);
   color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes move-down {
+  0% { transform: translate(50%, -400px); }
+  100% { transform: translateY(50%, 0) }
+}
+
+.modal-show {
+  display:block;
+  animation-name: move-down;
+  animation-duration: 1s;
 }
 
 .footer {
