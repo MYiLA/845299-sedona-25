@@ -187,7 +187,7 @@ html {
   padding: 0;
   margin: 0 auto;
   margin-bottom: 24px;
-  width: 160px;
+  width: 158px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 600;
@@ -208,7 +208,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
 
 .reason-img {
   display: block;
@@ -452,13 +451,13 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+
 .booking-number-children {
   width: 180px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .booking-number-adult label,
@@ -558,7 +557,6 @@ html {
   width: 460px;
   height: 58px;
   border: none;
-
   font-size: 21px;
   line-height: 26px;
   font-weight: 600;
@@ -701,7 +699,7 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-right: 72px;
   padding-bottom: 6px;
   padding-left: 72px;
@@ -860,7 +858,7 @@ html {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
@@ -895,9 +893,8 @@ html {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 83px;
+  width: 82px;
   margin-left: 65px;
-
 }
 
 .price-controls input {
@@ -951,7 +948,7 @@ html {
 
 .search-form-submit {
   display: block;
-  margin: 0 auto;
+  margin: 0 27%;
   padding-left: 33px;
   padding-right: 35px;
   padding-top: 6px;
@@ -1097,8 +1094,8 @@ html {
   margin: 0;
   padding-left: 73px;
   padding-right: 73px;
-  padding-top: 30px;
-  padding-bottom: 29px;
+  padding-top: 28px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1107,6 +1104,7 @@ html {
 .hotels-item {
   border-top: 1px solid rgb(229, 229, 229);
 }
+
 .hotels-item:last-child {
   border-bottom: 1px solid rgb(229, 229, 229);
 }
@@ -1197,9 +1195,9 @@ html {
 .hotel-btn-info {
   margin: 0;
   margin-right: 7px;
-  padding-top: 4px;
+  padding-top: 5px;
   padding-right: 17px;
-  padding-left: 17px;
+  padding-left: 16px;
   padding-bottom: 3px;
   font-size: 14px;
   line-height: 21px;
@@ -1220,9 +1218,9 @@ html {
 
 .hotel-btn-reservation {
   margin: 0;
-  padding-top: 4px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding-top: 5px;
+  padding-right: 18px;
+  padding-left: 15px;
   padding-bottom: 3px;
   font-size: 14px;
   line-height: 21px;
@@ -1276,7 +1274,7 @@ html {
 .hotel-rating-span {
   width: 110px;
   margin-left: auto;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-bottom: 3px;
   padding-left: 16px;
   display: block;
