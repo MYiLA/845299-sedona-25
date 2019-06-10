@@ -21,12 +21,15 @@ bookingBtn.addEventListener("click", function (evt) {
 bookingPopup.addEventListener("submit", function (evt) {
   evt.preventDefault();
   if(!dataArrive.value || !dataDeparture.value) {
-    console.log("ЗАПОЛНИТЕ ФОРМУ ПЕРЕД ОТПРАВКОЙ");
+    evt.preventDefault();
+    bookingPopup.classList.add("input-invalide");
   }
   else {
     console.log("Отправляю форму");
   }
 });
+
+// repaint-white-red
 
 // попытка реализовать закрытие попапа с помощью ESC
 // window.addEventListener("keydown", function (evt) {
@@ -37,6 +40,5 @@ bookingPopup.addEventListener("submit", function (evt) {
 //     }
 //   }
 // });
-
 
 

@@ -364,6 +364,12 @@ html {
   100% { transform: translate(283px, 0) }
 }
 
+.modal-show {
+  display:block;
+  animation-name: move-down;
+  animation-duration: 1s;
+}
+
 .booking-form-hidden {
   display: none;
 }
@@ -425,6 +431,18 @@ html {
 .data-input:focus {
   background-color: rgb(255,255, 255);
   border: 2px solid rgb(229, 229, 229);
+}
+
+@keyframes repaint-white-red {
+  0% { background-color: rgb(255, 255, 255) }
+  100% { background-color: rgb(235, 155, 109) }
+}
+
+.input-invalide {
+  animation-name: repaint-white-red;
+  animation-duration: 0.7s;
+  /* background-color: rgb(250, 163, 151);
+  border-color: rgb(250, 33, 4); */
 }
 
 .booking-btn-calendar {
@@ -505,10 +523,8 @@ html {
 .btn-minus::before {
   content: "";
   position: absolute;
-  
-  right: 33%;
   top: 16px;
-  /* transform:translate(13px); */
+  right: 11px;
   width: 12px;
   height: 3px;
   background-color: rgb(169, 169, 169);
@@ -536,8 +552,8 @@ html {
 .btn-plus::before {
   content: "";
   position: absolute;
-  right: 50%;
-  /* transform: translate(13px); */
+  top: 16px;
+  right: 11px;
   width: 12px;
   height: 3px;
   background-color: rgb(169, 169, 169);
@@ -546,10 +562,10 @@ html {
 .btn-plus::after {
   content: "";
   position: absolute;
-  right: 50%;
-  transform: translate(50%) rotate(90deg);
-  width: 12px;
-  height: 3px;
+  top: 12px;
+  right: 15px;
+  width: 3px;
+  height: 12px;
   background-color: rgb(169, 169, 169);
 }
 
@@ -590,12 +606,6 @@ html {
 .booking-btn-search:active {
   background-color: rgb(84, 150, 189);
   color: rgba(255, 255, 255, 0.3);
-}
-
-.modal-show {
-  display:block;
-  animation-name: move-down;
-  animation-duration: 1s;
 }
 
 .footer {
