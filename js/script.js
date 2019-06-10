@@ -16,7 +16,6 @@ bookingBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
     bookingPopup.classList.remove("modal-show");
   }
-  dataArrive.focus();
 });
 
 bookingPopup.addEventListener("submit", function (evt) {
@@ -38,5 +37,6 @@ bookingPopup.addEventListener("submit", function (evt) {
 //     }
 //   }
 // });
+
 
 

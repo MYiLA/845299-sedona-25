@@ -359,13 +359,13 @@ html {
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.20);
 }
 
-.booking-form-hidden {
-  display: none;
+@keyframes move-down {
+  0% { transform: translate(283px, -400px); }
+  100% { transform: translate(283px, 0) }
 }
 
-@keyframes move-down {
-  0% { transform: translate(50%, -400px); }
-  100% { transform: translateY(50%, 0) }
+.booking-form-hidden {
+  display: none;
 }
 
 .booking-data-arrive {
@@ -505,8 +505,10 @@ html {
 .btn-minus::before {
   content: "";
   position: absolute;
-  right: 50%;
-  transform:translate(50%);
+  
+  right: 33%;
+  top: 16px;
+  /* transform:translate(13px); */
   width: 12px;
   height: 3px;
   background-color: rgb(169, 169, 169);
@@ -535,7 +537,7 @@ html {
   content: "";
   position: absolute;
   right: 50%;
-  transform: translate(50%);
+  /* transform: translate(13px); */
   width: 12px;
   height: 3px;
   background-color: rgb(169, 169, 169);
