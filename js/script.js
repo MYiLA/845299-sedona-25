@@ -3,8 +3,6 @@ var bookingPopup = document.querySelector(".booking-form");
 var dataArrive = bookingPopup.querySelector("[name=data-arrive]");
 var dataDeparture = bookingPopup.querySelector("[name=data-departure]");
 
-dataArrive.focus();
-
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (!bookingPopup.classList.contains("booking-form-hidden")) {
