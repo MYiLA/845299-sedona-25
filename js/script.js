@@ -5,6 +5,18 @@ var dataDeparture = bookingPopup.querySelector("[name=data-departure]");
 
 dataArrive.focus();
 
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (!bookingPopup.classList.contains("booking-form-hidden")) {
+      evt.preventDefault();
+      bookingPopup.classList.remove("modal-show");
+      bookingPopup.classList.add("booking-form-hidden");
+      dataArrive.classList.remove("input-invalide");
+      dataDeparture.classList.remove("input-invalide");
+    }
+  }
+});
+
 bookingBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   bookingPopup.classList.toggle("booking-form-hidden");
@@ -15,30 +27,28 @@ bookingBtn.addEventListener("click", function (evt) {
   if (bookingPopup.classList.contains("booking-form-hidden")) {
     evt.preventDefault();
     bookingPopup.classList.remove("modal-show");
+    dataArrive.classList.remove("input-invalide");
+    dataDeparture.classList.remove("input-invalide");
   }
 });
 
 bookingPopup.addEventListener("submit", function (evt) {
   evt.preventDefault();
-  if(!dataArrive.value || !dataDeparture.value) {
+  if(!dataArrive.value) {
     evt.preventDefault();
-    bookingPopup.classList.add("input-invalide");
+    dataArrive.classList.remove("input-invalide");
+    dataArrive.offsetWidth = dataArrive.offsetWidth;
+    dataArrive.classList.add("input-invalide");
+  }
+  if(!dataDeparture.value) {
+    evt.preventDefault();
+    dataDeparture.classList.remove("input-invalide");
+    dataDeparture.offsetWidth = dataArrive.offsetWidth;
+    dataDeparture.classList.add("input-invalide");
   }
   else {
     console.log("Отправляю форму");
   }
 });
-
-// repaint-white-red
-
-// попытка реализовать закрытие попапа с помощью ESC
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27) {
-//     if (!bookingPopup.classList.contains("booking-form-hidden")) {
-//       evt.preventDefault();
-//       bookingPopup.classList.add("booking-form-hidden");
-//     }
-//   }
-// });
 
 

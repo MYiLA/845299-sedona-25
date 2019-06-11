@@ -27,7 +27,7 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+.main-body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -367,7 +367,7 @@ html {
 .modal-show {
   display:block;
   animation-name: move-down;
-  animation-duration: 1s;
+  animation-duration: 0.9s;
 }
 
 .booking-form-hidden {
@@ -434,15 +434,30 @@ html {
 }
 
 @keyframes repaint-white-red {
-  0% { background-color: rgb(255, 255, 255) }
-  100% { background-color: rgb(235, 155, 109) }
+  0% { 
+    background-color: rgb(255, 255, 255);
+  }
+  20% {
+    transform: rotate(3deg)
+  }
+  40% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(1deg)
+  }
+  80% {
+    transform: rotate(-1deg)
+  }
+  100% { 
+    border-color: rgb(247, 106, 87);
+    background-color: rgb(255, 238, 238);
+    transform: rotate(0) }   
 }
 
 .input-invalide {
   animation-name: repaint-white-red;
-  animation-duration: 0.7s;
-  /* background-color: rgb(250, 163, 151);
-  border-color: rgb(250, 33, 4); */
+  animation-duration: 0.6s;
 }
 
 .booking-btn-calendar {
@@ -797,7 +812,6 @@ html {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.search-input:hover + label::before,
 .search-input:focus + label::before {
   filter: drop-shadow(0 0 2px rgb(255, 0, 76));
 }
@@ -860,11 +874,6 @@ html {
 .search-type-item:disabled + label {
   color: rgb(106, 106, 107);
   background-color: rgba(0, 0, 0, 0);
-}
-
-.search-type input:focus + .search-type-item::before,
-.search-service input:focus + .search-service-item::before {
-  filter: drop-shadow( 0 0 3px rgb(255, 0, 0));
 }
 
 .container-price {
