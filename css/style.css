@@ -438,21 +438,18 @@ html {
     background-color: rgb(255, 255, 255);
   }
   20% {
-    transform: rotate(3deg)
+    transform: translate(283px, -10px);
   }
   40% {
-    transform: rotate(-3deg);
+    transform: translate(283px, 0);
   }
-  60% {
-    transform: rotate(1deg)
+  70% {
+    transform: translate(283px, -10px);
   }
-  80% {
-    transform: rotate(-1deg)
-  }
-  100% { 
-    border-color: rgb(247, 106, 87);
-    background-color: rgb(255, 238, 238);
-    transform: rotate(0) }   
+  100% {
+    box-shadow: 0 0 20px 5px rgb(255, 0, 0);
+    transform: translate(283px, 0);
+  } 
 }
 
 .input-invalide {
