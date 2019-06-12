@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-style.css">
 </head>
 
 <body class="main-body">
@@ -47,32 +47,46 @@
         <ol class="reasons-list">
           <li class="reasons-item">
             <div class="reason-info">
-              <h2 class="reason-title">Настоящий городок</h2>
+              <h2 class="reason-title">
+                Настоящий городок
+              </h2>
               <span class="reason-number">— №1 —</span>
-              <p class="reason-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="reason-desc">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
             </div>
             <img class="reason-img" src="img/real-town.jpg" alt="Вид на городок" width="800" height="256">
             <ul class="features-list">
               <li class="features-item">
                 <h3 class="feature-title feature-house">Жильё</h3>
-                <p class="feature-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="feature-desc">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
               </li>
               <li class="features-item">
                 <h3 class="feature-title feature-food">Еда</h3>
-                <p class="feature-desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="feature-desc">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
               </li>
               <li class="features-item">
                 <h3 class="feature-title feature-souvenir">Сувениры</h3>
-                <p class="feature-desc">Не только китайского, но и местного производства!</p>
+                <p class="feature-desc">
+                  Не только китайского, но и местного производства!
+                </p>
               </li>
             </ul>
           </li>
           <li class="reasons-item">
             <img class="reason-img" src="img/devil-bridge.jpg" alt="Мост Дьявола" width="800" height="256">
             <div class="reason-info">
-              <h2 class="reason-title">Там есть<br>мост дьявола</h2>
+              <h2 class="reason-title">
+                Там есть<br>мост дьявола
+              </h2>
               <span class="reason-number">— №2 —</span>
-              <p class="reason-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p class="reason-desc">
+                Да, по нему можно пройти! Если конечно вы осмелитесь
+              </p>
             </div>
           </li>
           <li class="reasons-item reason-item-bottom">
@@ -114,12 +128,11 @@
           </p>
           <button class="booking-btn-title" type="button">Поиск гостиницы в седоне</button>
         </div>
-
         <form class="booking-form booking-form-hidden" method="POST" action="https://echo.htmlacademy.ru">
           <div class="booking-data-arrive">
             <label for="data-arrive-field">Дата заезда:</label>
             <input class="data-input" type="text" id="data-arrive-field" name="data-arrive" value="24 апреля 2017">
-            <button class="booking-btn-calendar" type="button">
+            <button class="booking-btn-calendar" type="button" aria-label="Выбрать дату заезда">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                 <path
                   d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
@@ -131,7 +144,7 @@
           <div class="booking-data-departure">
             <label for="data-departure-field">Дата выезда:</label>
             <input class="data-input" type="text" id="data-departure-field" name="data-departure" value="4 июля 2017">
-            <button class="booking-btn-calendar" type="button">
+            <button class="booking-btn-calendar" type="button" aria-label="Выбрать дату выезда">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                 <path
                   d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
@@ -158,6 +171,9 @@
           </div>
           <button class="booking-btn-search" type="submit">Найти</button>
         </form>
+        <noscript>
+          <img src="img/map.png" alt="Карта с отелями Седоны" width="1200" height="593">
+        </noscript>
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104769.6626235882!2d-111.79685732532282!3d34.85492178798394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560290180128!5m2!1sru!2sru" width="1200" height="593" style="border:0" allowfullscreen>
         </iframe>
@@ -188,8 +204,8 @@
         </svg>
       </a>
     </footer>
-    <script src="js/script.js"></script>
   </div>
+  <script src="js/min-script.js"></script>
 </body>
 
 </html>
