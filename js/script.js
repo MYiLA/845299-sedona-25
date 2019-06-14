@@ -2,13 +2,19 @@ var bookingBtn = document.querySelector(".booking-btn-title");
 var bookingPopup = document.querySelector(".booking-form");
 var dataArrive = bookingPopup.querySelector("[name=data-arrive]");
 var dataDeparture = bookingPopup.querySelector("[name=data-departure]");
+var mapImg = document.querySelector(".map-img");
+var mapIframe = document.querySelector(".map-iframe");
+
+bookingPopup.classList.add("hidden");
+mapImg.classList.add("hidden");
+mapIframe.classList.remove("hidden");
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (!bookingPopup.classList.contains("booking-form-hidden")) {
+    if (!bookingPopup.classList.contains("hidden")) {
       evt.preventDefault();
       bookingPopup.classList.remove("modal-show");
-      bookingPopup.classList.add("booking-form-hidden");
+      bookingPopup.classList.add("hidden");
       bookingPopup.classList.remove("input-invalide");
     }
   }
@@ -16,12 +22,12 @@ window.addEventListener("keydown", function (evt) {
 
 bookingBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  bookingPopup.classList.toggle("booking-form-hidden");
-  if (!bookingPopup.classList.contains("booking-form-hidden")) {
+  bookingPopup.classList.toggle("hidden");
+  if (!bookingPopup.classList.contains("hidden")) {
     evt.preventDefault();
     bookingPopup.classList.add("modal-show");
   }
-  if (bookingPopup.classList.contains("booking-form-hidden")) {
+  if (bookingPopup.classList.contains("hidden")) {
     evt.preventDefault();
     bookingPopup.classList.remove("modal-show");
     bookingPopup.classList.remove("input-invalide");
